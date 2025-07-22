@@ -8,11 +8,11 @@ jobs:
   build-and-run:
     runs-on: ubuntu-latest
     steps:
-      - name: 🧾 Sjekk ut koden
+      - name: Sjekk ut koden
         uses: actions/checkout@v3
 
-      - name: 🐳 Bygg Docker-image
+      - name: Bygg Docker-image
         run: docker build -t hello-devops .
 
-      - name: ▶️ Kjør container
+      - name: Kjør container
         run: docker run hello-devops
